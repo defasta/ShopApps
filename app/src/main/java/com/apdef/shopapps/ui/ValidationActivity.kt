@@ -12,6 +12,13 @@ class ValidationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_validation)
 
+        //User information:
+        //user: user1, password: 8881
+        //user: user2, password: 8882
+        //user: user3, password: 8883
+        //user: user4, password: 8884
+        //user: user5, password: 8885
+
         btn_enter.setOnClickListener {
             val username = et_username.text.toString()
             val pin = et_pin.text.toString()
