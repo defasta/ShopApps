@@ -1,10 +1,10 @@
-package com.apdef.shopapps
+package com.apdef.shopapps.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_edit.*
+import com.apdef.shopapps.R
 import kotlinx.android.synthetic.main.activity_validation.*
 
 class ValidationActivity : AppCompatActivity() {

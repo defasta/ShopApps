@@ -1,9 +1,12 @@
-package com.apdef.shopapps
+package com.apdef.shopapps.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.apdef.shopapps.model.Goods
+import com.apdef.shopapps.storage.GoodsRoomDatabase
+import com.apdef.shopapps.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,9 +28,10 @@ class MainActivity : AppCompatActivity() {
         listGoods.addAll(dao.getAll())
 
         rv_goods.apply {
-            adapter = GoodsAdapter(listGoods, object: GoodsAdapter.GoodListener{
+            adapter = GoodsAdapter(listGoods, object: GoodsAdapter.GoodListener {
                 override fun OnItemClicked(goods: Goods) {
-                    startActivity(Intent(this@MainActivity, EditActivity::class.java).putExtra(EditActivity.EDIT_GOODS_EXTRA, goods))
+                    startActivity(Intent(this@MainActivity, EditActivity::class.java).putExtra(
+                        EditActivity.EDIT_GOODS_EXTRA, goods))
                 }
 
             })

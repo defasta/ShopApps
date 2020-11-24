@@ -1,4 +1,4 @@
-package com.apdef.shopapps
+package com.apdef.shopapps.model
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo

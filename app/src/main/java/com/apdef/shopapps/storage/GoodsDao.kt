@@ -1,6 +1,7 @@
-package com.apdef.shopapps
+package com.apdef.shopapps.storage
 
 import androidx.room.*
+import com.apdef.shopapps.model.Goods
 
 @Dao
 interface GoodsDao {

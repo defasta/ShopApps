@@ -1,9 +1,13 @@
-package com.apdef.shopapps
+package com.apdef.shopapps.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.apdef.shopapps.model.Goods
+import com.apdef.shopapps.storage.GoodsDao
+import com.apdef.shopapps.storage.GoodsRoomDatabase
+import com.apdef.shopapps.R
 import kotlinx.android.synthetic.main.activity_edit.*
 
 class EditActivity : AppCompatActivity() {
